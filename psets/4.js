@@ -11,3 +11,10 @@ http://www.mathsisfun.com/temperature-conversion.html
 */
 
 // write your solution here...
+var celsius = 40;
+var fahrenheit = celsius * 1.8 + 32;
+console.log(celsius + "°C is " + fahrenheit + "°F");
+
+var fahrenheit = 40;
+var celsius = (fahrenheit - 32) / 1.8;
+console.log(fahrenheit + "°F is " + celsius.toFixed(2) + "°C");

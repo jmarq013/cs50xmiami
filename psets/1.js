@@ -10,3 +10,8 @@ Forgot how old someone is? Calculate it!
 */
 
 // write your solution here...
+var currentYear = 2016;
+var birthYear = 1989;
+var ages = [currentYear - birthYear - 1, currentYear - birthYear];
+
+console.log("They are either " + ages[0] + " or " + ages[1]);

@@ -10,3 +10,6 @@ http://math2.org/math/geometry/circles.htm
 */
 
 // write your solution here...
+var radius = 2;
+var circumference = 2 * Math.PI * radius;
+console.log("The area is " + circumference.toFixed(2));

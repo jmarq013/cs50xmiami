@@ -12,3 +12,9 @@ Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no mo
 */
 
 // write your solution here...
+var currentAge = 27;
+var maximumAge = 90;
+var mangoes = 4;
+var daysInYear = 365;
+var total = (maximumAge - currentAge) * daysInYear * mangoes;
+console.log("You will need " + total + " to last you until the ripe old age of " + maximumAge + ".");
