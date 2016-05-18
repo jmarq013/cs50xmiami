@@ -14,4 +14,12 @@ Look up the JavaScript string reference to find methods which may be useful!
 
 function mixUp(a, b) {
   // write your solution here...
+  var first = b.slice(0,2) + a.slice(2);
+  var second = a.slice(0,2) + b.slice(2);
+  var string = first + " " + second;
+  return string;
 }
+
+var one = "banana";
+var two = "apple";
+console.log(mixUp(one, two));
