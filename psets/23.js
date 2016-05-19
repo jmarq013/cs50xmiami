@@ -11,3 +11,15 @@ It's like IMDB, but much much smaller!
 */
 
 // write your solution here...
+var favMovie = {
+  title: "Blade Runner",
+  durationMin: 117,
+  stars: ["Harrison Ford", "Rutger Hauer", "Sean Young"]
+};
+
+function movieInfo(movie)
+{
+  console.log(movie.title + " lasts for " + movie.durationMin + " minutes. Stars: " + movie.stars[0] + ", " + movie.stars[1] + ", " + movie.stars[2] + ".");
+}
+
+movieInfo(favMovie);

@@ -11,3 +11,17 @@ and log the result to make sure it works.
 */
 
 // write your solution here...
+function helloWorld(language)
+{
+  switch (language ) {
+    case "es": return "Hola, Mundo";
+    case "de": return "Hallo, Welt";
+    case "ch": return "你好，世界"
+    default: return "Hello, World";
+  }
+}
+
+console.log(helloWorld("es"));
+console.log(helloWorld("de"));
+console.log(helloWorld("ch"));
+console.log(helloWorld("en"));

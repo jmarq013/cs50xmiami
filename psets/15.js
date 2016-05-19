@@ -10,3 +10,12 @@ and log the output to make sure it works (e.g. "The greater number of 5 and 10 i
 */
 
 // write your solution here...
+function greaterNum(num1, num2)
+{
+  var max = Math.max(num1, num2);
+  return max;
+}
+
+var num1 = 5;
+var num2 = 10;
+console.log("The greater number of " + num1 + " and " + num2 + " is " + greaterNum(num1, num2) + ".");

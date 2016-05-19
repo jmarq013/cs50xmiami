@@ -17,3 +17,31 @@ Keep track of which books you read and which books you want to read!
 */
 
 // write your solution here...
+var book1 = {
+  title: "The Age of Spiritual Machines",
+  author: "Ray Kurzweil",
+  alreadyRead: false
+};
+
+var book2 = {
+  title: "The Man in the High Castle",
+  author: "Philip K. Dick",
+  alreadyRead: true
+};
+
+var book3 = {
+  title: "The Hero with a Thousand Faces",
+  author: "Joseph Campbell",
+  alreadyRead: true
+};
+
+var books = [book1, book2, book3];
+
+for (var i = 0; i < books.length; i++) {
+  console.log(books[i].title + " by " + books[i].author);
+  if (books[i].alreadyRead == true) {
+    console.log("You already read \"" + books[i].title + "\" by " + books[i].author);
+  } else {
+    console.log("You still need to read \"" + books[i].title + "\" by " + books[i].author);
+  }
+}
