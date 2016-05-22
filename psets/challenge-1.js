@@ -35,3 +35,34 @@ like Wheel of Fortune without the wheel and fortune).
 */
 
 // write your solution here...
+var word = ['F', 'O', 'X'];
+var guessed = ['_', '_', '_'];
+
+function guessLetter(letter)
+{
+  var counter = 0;
+  var correct = 0;
+  for (var i = 0; i < word.length; i++) {
+    if (letter == word[i]) {
+      guessed[i] = letter;
+      correct++;
+    }
+    if (guessed[i] == '_') {
+      counter++;
+    }
+  }
+  console.log(guessed);
+
+  if (correct > 0) {
+    console.log("Congratulations! You guessed a letter correctly!");
+  }
+
+  if (counter == 0) {
+    console.log("You win!");
+  }
+}
+
+guessLetter('G');
+guessLetter('F');
+guessLetter('O');
+guessLetter('X');

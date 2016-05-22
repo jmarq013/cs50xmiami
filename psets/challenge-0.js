@@ -28,3 +28,48 @@ Write a function that will take one argument (a number) and perform the followin
 
 
 // write your solution here...
+function squareNumber(number)
+{
+  var result = Math.pow(number, 2);
+  console.log("The result of squaring the number " + number + " is " + result + ".");
+  return result;
+}
+
+//squareNumber(5);
+
+function halfNumber(number)
+{
+  var result = number / 2;
+  console.log("Half of " + number + " is " + result + ".");
+  return result;
+}
+
+//halfNumber(5);
+
+function percentOf(num1, num2)
+{
+  var result = (num1/num2) * 100;
+  console.log(num1.toFixed(2) + " is " + result.toFixed(2) + "% of " + num2.toFixed(2));
+  return result;
+}
+
+//percentOf(2,4);
+
+function areaOfCircle(radius)
+{
+  var result = Math.PI * Math.pow(radius, 2);
+  console.log("The area for a circle with radius " + radius + " is " + result.toFixed(2));
+  return result;
+}
+
+//areaOfCircle(2);
+
+function all(number)
+{
+  var half = halfNumber(number);
+  var square = squareNumber(half);
+  var area = areaOfCircle(square);
+  var percentage = percentOf(area, Math.pow(area, 2));
+}
+
+all(5);
